@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { logo, logo1 } from "../images/index";
+// import {logo, logo1 } from "../images/index";
+import "./Navbar.css";
 
 function Navbar() {
   const headerSocial = [
@@ -31,12 +32,12 @@ function Navbar() {
           </Link>
         </div>
         <div className="impl_top_header">
-          <div className="container">
-            <div className="row">
+          <div className="container main_container">
+            <div className="row main_subcontainer">
               <div className="col-lg-12 col-md-12">
                 <div className="impl_top_info">
                   {headerSocial.map((hs) => (
-                    <ul className="impl_header_social">
+                    <ul className="impl_header_social headerSocial">
                       <li>
                         <Link to="/">
                           <i className={hs.classname} aria-hidden={hs.aria}></i>
@@ -44,11 +45,11 @@ function Navbar() {
                       </li>
                     </ul>
                   ))}
-                  <p className="impl_header_time">
-                    <i className="fa fa-clock-o" aria-hidden="true"></i>
+                  <p className="impl_header_time timeSet settimeout">
+                    <i className="fa fa-clock-o clocksetout" aria-hidden="true"></i>
                     Working Hours - 6 AM To 8 PM <span>sunday closed</span>
                   </p>
-                  <ul className="impl_header_icons">
+                  <ul className="impl_header_icons header_icons">
                     <li className="impl_search">
                       <span>
                         <i className="fa fa-search" aria-hidden="true"></i>
@@ -65,7 +66,7 @@ function Navbar() {
                       </Link>
                     </li>
                   </ul>
-                  <div className="impl_search_overlay">
+                  <div className="impl_search_overlay barBtnSearch">
                     <div className="impl_search_area">
                       <div className="srch_inner">
                         <form action="#">
@@ -224,23 +225,23 @@ function Navbar() {
           </div>
         </div>
         <div className="impl_menu_wrapper">
-          <div className="container">
+          <div className="container headerBar">
             <div className="row">
               <div className="col-lg-12 col-md-12">
-                <button className="impl_menu_btn">
-                  <i className="fa fa-car" aria-hidden="true"></i>
+                <button className="impl_menu_btn ">
+                  {/* <i className="fa fa-car " aria-hidden="true"></i> */}
                   <i className="fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <div className="impl_menu_inner">
                   <div className="impl_logo_responsive">
                     <a href="index.html">
-                      <img src={logo1} alt="Logo" className="img-fluid" />
+                      <img src="" alt="Logo" className="img-fluid" />
                     </a>
                   </div>
-                  <Link to="/login" className="impl_btn">
+                  <Link to="/login" className="impl_btn sellcarquery">
                     Login
                   </Link>
-                  <Link to="/Sellcar" className="impl_btn">
+                  <Link to="/Sellcar" className="impl_btn sellcarquery">
                     Sell your car
                   </Link>
                   <div className="impl_menu">
@@ -254,7 +255,7 @@ function Navbar() {
                             Home
                           </Link>
                         </li>
-                        <li className="dropdown">
+                        <li>
                         <Link to="/New">
                         Shop
                           </Link>
@@ -267,7 +268,7 @@ function Navbar() {
                         <li>
                           <Link to="/Blog">blog</Link>
                         </li>
-                        <li className="dropdown">
+                        <li>
                           <Link to="/compare">
                           Compare
                           </Link>

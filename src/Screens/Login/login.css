@@ -13,7 +13,7 @@
 }
 .left-login{
   width: 30%;
-  height: 500px;
+  height: 415px;
   /* border: 2px solid coral; */
   padding-left: 20px;
   padding-right: 20px;
@@ -23,6 +23,7 @@
   backdrop-filter: saturate(180%) blur(10px);
   /* box-shadow: 8px 12px 15px rgba(57, 53, 53, 0.911); */
 }
+
 .right-signup{
   width: 30%;
   padding-left: 20px;
@@ -325,3 +326,63 @@
   display: block;
 }
 
+
+
+@media (max-width:405px){
+  .mainscreen{
+    display: flex;
+    flex-direction: column;
+  }
+  .login_form{
+    width: 90%;
+  }
+  .signup_form_page{
+    width: 90%;
+  }
+  .lineoff{
+    display: none;
+    vertical-align: middle;
+  }
+}
+
+
+
+
+@media(max-width:750px){
+  .mainscreen{
+    display: flex;
+    flex-direction: column;
+  }
+  .login_form{
+    width: 90%;
+  }
+  .signup_form_page{
+    width: 90%;
+  }
+  .lineof{
+    display: none;
+  }
+}
+@media (min-width: 775px) {
+  .reziseofloginform{
+    width: 35%;
+    height: 460px;
+  }
+  .reziseofsignupform{
+    width: 55%;
+  }
+}
+@media (min-width: 750px) and (max-width: 775px) {
+  .reziseofloginform{
+    width: 35%;
+    height: 460px;
+  }
+  .reziseofsignupform{
+    width: 55%;
+  }
+}
+@media (min-width: 600px) and (max-width:750px){
+  .reziseofloginform{
+    height: 470px;
+  }
+}

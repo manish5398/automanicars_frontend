@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "./Navbar.css";
 function Footer() {
   return (
     <>
       <div className="impl_footer_wrapper">
         <div className="impl_social_wrapper">
           <ul>
-            <li>
-              <Link to="/">
+            <li className="marreduce">
+              <Link  to="/">
                 <i className="fa fa-facebook" aria-hidden="true"></i>
               </Link>
             </li>
@@ -179,7 +179,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="impl_btm_footer">
+      <div className="impl_btm_footer footer_query">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12">

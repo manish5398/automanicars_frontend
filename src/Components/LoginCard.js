@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import swal from "sweetalert";
+import "../Screens/Login/login.css";
 
 const LoginCard = () => {
   const [toggle, setToggle] = useState(false);
@@ -43,7 +44,7 @@ const LoginCard = () => {
   };
   return (
     <>
-      <div className="left-login">
+      <div className="left-login main_login login_form reziseofloginform">
         <h2 className="head-login">Login Form</h2>
         <div id="login">
           <form className="form" onSubmit={handleSubmit}>

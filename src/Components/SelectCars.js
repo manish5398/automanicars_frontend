@@ -13,7 +13,7 @@ const SelectCars = (props) => {
   return (
     <>
       {state.map((sc2) => (
-        <div className="impl_cmpr_box">
+        <div className="impl_cmpr_box"> 
           <h2 className="impl_cmpr_title">{sc2.h2}</h2>
           <div className="compare_select_box custom_select">
             <select>

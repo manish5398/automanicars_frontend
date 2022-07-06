@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import swal from "sweetalert";
+import "../Screens/Login/login.css";
 
 const RegistrationCard = () => {
   const [toggle2, setToggle2] = useState(false);
@@ -108,7 +109,7 @@ const RegistrationCard = () => {
   };
   return (
     <>
-      <div className="right-signup">
+      <div className="right-signup signup_form_page reziseofsignupform">
         <h2 className="head-register">Registration Form</h2>
         <div id="signup">
           <form ref={form} className="form" onSubmit={handleSubmit2}>

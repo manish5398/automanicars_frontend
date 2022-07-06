@@ -224,8 +224,8 @@ const Newsingle = () => {
   // console.log("hello2")
   console.log(details)
   useEffect(() => {
-    getData()
-  }, []);
+    getData();
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);

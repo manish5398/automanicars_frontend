@@ -9,7 +9,7 @@ const Login = () => {
       <div className="mainscreen">
         <LoginCard /> 
 
-        <div className="vl"></div>
+        <div className="vl lineof"></div>
 
         <RegistrationCard />
       </div>
